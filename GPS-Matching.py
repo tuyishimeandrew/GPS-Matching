@@ -11,7 +11,7 @@ import io
 
 st.title("GPS Matcher by Farmercode + File")
 
-uploaded_file = st.file_uploader("Upload your inspection Excel file", type=["xlsx"])
+uploaded_file = st.file_uploader("Upload your inspection Excel file", type=["xlsx","csv"])
 github_url = "https://raw.githubusercontent.com/tuyishimeandrew/GPS-Matching/main/Matching.xlsx"
 
 
