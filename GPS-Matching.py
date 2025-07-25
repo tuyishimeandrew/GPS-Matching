@@ -6,9 +6,9 @@ import pandas as pd
 from geopy.distance import geodesic
 import io
 
-st.title("📍 GPS Matcher by Farmercode + File")
+st.title("📍 Follow-ups/Engagements against old GPS data")
 
-uploaded_file = st.file_uploader("📤 Upload your inspection Excel or CSV file", type=["xlsx", "csv"])
+uploaded_file = st.file_uploader("📤 Upload your Engagement/Follow-ups Excel or CSV file", type=["xlsx", "csv"])
 github_url = "https://raw.githubusercontent.com/tuyishimeandrew/GPS-Matching/main/Matching.xlsx"
 
 # Define distance category function
