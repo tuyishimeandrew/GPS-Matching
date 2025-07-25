@@ -12,7 +12,8 @@ import io
 st.title("GPS Matcher by Farmercode + File")
 
 uploaded_file = st.file_uploader("Upload your inspection Excel file", type=["xlsx"])
-github_url = st.text_input("Paste RAW GitHub URL of the reference GPS Excel file")
+github_url = "https://raw.githubusercontent.com/tuyishimeandrew/GPS-Matching/main/Matching.xlsx"
+
 
 if uploaded_file and github_url:
     try:
