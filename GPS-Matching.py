@@ -38,7 +38,7 @@ if uploaded_file and github_url:
 
         # Required columns
         required_cols_user = {'Farmercode', 'GPS-Latitude', 'GPS-Longitude'}
-        required_cols_ref = {'Farmercode', 'Latitude', 'Longitude', 'File'}
+        required_cols_ref = {'Farmercode', 'Latitude', 'Longitude', 'File','Validated?'}
 
         if not required_cols_user.issubset(df.columns):
             st.error(f"Missing in uploaded file: {required_cols_user - set(df.columns)}")
