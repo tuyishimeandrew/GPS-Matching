@@ -68,14 +68,18 @@ if uploaded_file and github_url:
                         **row.to_dict(),
                         'Best Match File': best_match['File'],
                         'Distance_m': min_distance,
-                        'Distance Category': category
+                        'Distance Category': category,
+                        'Location Validated?': best_match['Validated?']
+                        
                     })
                 else:
                     results.append({
                         **row.to_dict(),
                         'Best Match File': 'No Match',
                         'Distance_m': None,
-                        'Distance Category': 'No Match'
+                        'Distance Category': "",
+                        'Location Validated?':""
+                        
                     })
 
             result_df = pd.DataFrame(results)
